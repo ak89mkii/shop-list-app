@@ -1,15 +1,23 @@
-import React from 'react';
+import { React, useState } from 'react';
 import { StyleSheet, Text, View, TextInput, TouchableOpacity } from 'react-native';
 
-const AddItem = ({title}) => {
-  return (
-    <View style={styles.header}>
-      <TextInput placeholder='Add to List...' style={styles.input} />
-      <TouchableOpacity style={styles.btn}>
-          <Text style={styles.btnText}>+ Add Item</Text>
-      </TouchableOpacity>
-    </View>
-  );
+const AddItem = ({title, addItem}) => {
+    const [text, setText] = useState('');
+
+    const onChange = textValue => setText(textValue);
+
+    return (
+        <View style={styles.header}>
+        <TextInput 
+            placeholder='Add to List...' 
+            style={styles.input}
+            onChangeText={onChange}
+        />
+        <TouchableOpacity style={styles.btn} onPress={() => addItem(text)}>
+            <Text style={styles.btnText}>+ Add Item</Text>
+        </TouchableOpacity>
+        </View>
+    );
 };
 
 const styles = StyleSheet.create({
@@ -17,6 +25,7 @@ const styles = StyleSheet.create({
         height: 60,
         padding: 15,
         fontSize: 16,
+        color: 'black'
     },
     btn: {
         backgroundColor: 'cornflowerblue',

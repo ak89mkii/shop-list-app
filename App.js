@@ -1,15 +1,13 @@
 import React, { useState } from 'react';
 import { FlatList, StyleSheet, Text, View } from 'react-native';
 import Header from './components/Header';
+import AddItemHeader from './components/AddItemHeader';
+import CartItemHeader from './components/CartItemHeader';
 import List from './components/List';
 import AddItem from './components/AddItem';
 
 const App = () => {
   const [items, setItems] = useState([
-    {id: Math.random(), text: 'Goku'},
-    {id: Math.random(), text: 'Cloud'},
-    {id: Math.random(), text: 'Spock'},
-    {id: Math.random(), text: 'IG-88'},
   ]);
 
   const deleteItem = (id) => {
@@ -18,10 +16,24 @@ const App = () => {
     });
   }
 
+  const addItem = (text) => {
+    setItems(prevItems => {
+      return [{id: Math.random(), text}, ...prevItems];
+    });
+  }
+
   return (
     <View style={styles.container}>
       <Header />
-      <AddItem />
+      <AddItem addItem={addItem}/>
+      <AddItemHeader />
+      <FlatList
+        data={items}
+        renderItem={({item}) => (
+          <List item={item} deleteItem={deleteItem}/>
+        )}
+      />
+      <CartItemHeader />
       <FlatList
         data={items}
         renderItem={({item}) => (
