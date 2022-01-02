@@ -4,6 +4,7 @@ import Header from './components/Header';
 import AddItemHeader from './components/AddItemHeader';
 import CartItemHeader from './components/CartItemHeader';
 import List from './components/List';
+import CartList from './components/CartList';
 import AddItem from './components/AddItem';
 
 const App = () => {
@@ -37,7 +38,7 @@ const App = () => {
       <FlatList
         data={items}
         renderItem={({item}) => (
-          <List item={item} deleteItem={deleteItem}/>
+          <CartList item={item} deleteItem={deleteItem}/>
         )}
       />
     </View>
