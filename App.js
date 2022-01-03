@@ -27,7 +27,7 @@ const App = () => {
 
   const addToCart = (text) => {
     setCarts(prevItems => {
-      return [{id: Math.random(), text}, ...prevItems];
+      return [{id: Math.random(), text}, ...prevItems]; 
     });
   }
 
@@ -39,7 +39,7 @@ const App = () => {
       <FlatList
         data={items}
         renderItem={({item}) => (
-          <List item={item} addToCart={addToCart}/>
+          <List item={item} addToCart={addToCart} deleteItem={deleteItem}/>
         )}
       />
       <CartItemHeader />

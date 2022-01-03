@@ -2,13 +2,13 @@ import React from 'react';
 import { StyleSheet, Text, View, TouchableOpacity, Pressable } from 'react-native';
 // import Icon from 'react-native-vector-icons/dist/FontAwesome';
 
-const List = ({item, text, addToCart}) => {
+const List = ({item, text, addToCart, deleteItem}) => {
   return (
     <TouchableOpacity style={styles.list}>
     <View style={styles.listView}>
         <Text style={styles.listView}>{item.text}</Text>
         <Pressable style={styles.listViewButtonAdd}>
-            <Text style={styles.listViewButtonAddText} onPress={() => addToCart(item.text)}>Item Found</Text>
+            <Text style={styles.listViewButtonAddText} onPress={() => {addToCart(item.text); deleteItem(item.id)}}>Item Found</Text>
         </Pressable>
         {/* <Pressable style={styles.listViewButtonAdd2} onPress={() => deleteItem(item.id)}>
             <Text style={styles.listViewButtonAddText2}>Remove</Text>
