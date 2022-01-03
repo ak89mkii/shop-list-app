@@ -6,10 +6,12 @@ import CartItemHeader from './components/CartItemHeader';
 import List from './components/List';
 import CartList from './components/CartList';
 import AddItem from './components/AddItem';
+// import AddToCart from './components/AddToCart';
 
 const App = () => {
-  const [items, setItems] = useState([
-  ]);
+  const [items, setItems] = useState([]);
+  const [carts, setCarts] = useState([]);
+
 
   const deleteItem = (id) => {
     setItems(prevItems => {
@@ -23,6 +25,12 @@ const App = () => {
     });
   }
 
+  const addToCart = (text) => {
+    setCarts(prevItems => {
+      return [{id: Math.random(), text}, ...prevItems];
+    });
+  }
+
   return (
     <View style={styles.container}>
       <Header />
@@ -31,12 +39,12 @@ const App = () => {
       <FlatList
         data={items}
         renderItem={({item}) => (
-          <List item={item} deleteItem={deleteItem}/>
+          <List item={item} addToCart={addToCart}/>
         )}
       />
       <CartItemHeader />
       <FlatList
-        data={items}
+        data={carts}
         renderItem={({item}) => (
           <CartList item={item} deleteItem={deleteItem}/>
         )}
