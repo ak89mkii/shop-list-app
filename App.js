@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { FlatList, StyleSheet, Text, View } from 'react-native';
+import { FlatList, StyleSheet, ScrollView, View } from 'react-native';
 import Header from './components/Header';
 import AddItemHeader from './components/AddItemHeader';
 import CartItemHeader from './components/CartItemHeader';
@@ -32,9 +32,10 @@ const App = () => {
   }
 
   return (
-    <View style={styles.container}>
+    <ScrollView style={styles.container}>
       <Header />
       <AddItem addItem={addItem}/>
+      <View>
       <AddItemHeader />
       <FlatList
         data={items}
@@ -42,6 +43,8 @@ const App = () => {
           <List item={item} addToCart={addToCart} deleteItem={deleteItem}/>
         )}
       />
+      </View>
+      <View>
       <CartItemHeader />
       <FlatList
         data={carts}
@@ -49,7 +52,8 @@ const App = () => {
           <CartList item={item} deleteItem={deleteItem}/>
         )}
       />
-    </View>
+      </View>
+    </ScrollView>
   );
 }
 

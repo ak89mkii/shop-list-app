@@ -24,6 +24,7 @@
 // https://www.youtube.com/watch?v=Hf4MJH0jDb4
 // https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/random
 // https://www.youtube.com/watch?v=qSRrxpdMpVc
+// https://stackoverflow.com/questions/52250061/react-native-how-to-call-multiple-functions-when-onpress-is-clicked/52250225
 #### Images References / Credits:
 #### Sounds References / Credits:
 #### Fonts / Credits:
