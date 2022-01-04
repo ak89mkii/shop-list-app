@@ -11,19 +11,20 @@ const CartItemHeader = ({title}) => {
 };
 
 CartItemHeader.defaultProps = {
-    title: 'Cart'
+    title: 'CART'
 }
 
 const styles = StyleSheet.create({
     header: {
-        height: 60,
+        height: 70,
         padding: 15,
         backgroundColor: '#EACE09'
     },
     text: {
-        color: '#fff',
-        fontSize: 24,
+        color: 'white',
+        fontSize: 30,
         textAlign: 'center',
+        fontWeight: 'bold',
     },
 });
 

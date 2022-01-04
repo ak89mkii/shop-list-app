@@ -1,5 +1,5 @@
 import { React, useState } from 'react';
-import { StyleSheet, Text, View, TextInput, TouchableOpacity } from 'react-native';
+import { StyleSheet, Text, View, TextInput, TouchableOpacity, Image } from 'react-native';
 
 const AddItem = ({title, addItem}) => {
     const [text, setText] = useState('');
@@ -8,14 +8,18 @@ const AddItem = ({title, addItem}) => {
 
     return (
         <View style={styles.header}>
-        <TextInput 
-            placeholder='Add to List...' 
-            style={styles.input}
-            onChangeText={onChange}
-        />
-        <TouchableOpacity style={styles.btn} onPress={() => addItem(text)}>
-            <Text style={styles.btnText}>+ Add Item</Text>
-        </TouchableOpacity>
+            <TextInput 
+                placeholder='Add to List...' 
+                style={styles.input}
+                onChangeText={onChange}
+            />
+            <TouchableOpacity style={styles.btn} onPress={() => addItem(text)}>
+                <Image
+                style={styles.tinyLogo}
+                source={require('/Users/spock-117/code/projects/react_native/ShopListApp/Images/add.png')}
+                />
+                <Text style={styles.btnText}>Add Item</Text>
+            </TouchableOpacity>
         </View>
     );
 };
@@ -25,7 +29,7 @@ const styles = StyleSheet.create({
         height: 60,
         padding: 15,
         fontSize: 16,
-        color: 'black'
+        flexDirection: 'row',
     },
     btn: {
         backgroundColor: 'cornflowerblue',
@@ -34,11 +38,18 @@ const styles = StyleSheet.create({
         textAlign: 'center',
         padding: 5,
         margin: 5,
+        flexDirection: 'row',
+        justifyContent: 'center',
+        alignItems: 'center',
     },
     btnText: {
         color: '#fff',
         fontSize: 24,
         textAlign: 'center',
+    },
+    tinyLogo: {
+      width: 50,
+      height: 50,
     },
 });
 

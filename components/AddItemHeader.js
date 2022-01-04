@@ -11,19 +11,21 @@ const AddItemHeader = ({title}) => {
 };
 
 AddItemHeader.defaultProps = {
-    title: 'To Get List'
+    title: 'TO FIND'
 }
 
 const styles = StyleSheet.create({
     header: {
-        height: 60,
+        height: 70,
         padding: 15,
         backgroundColor: '#0047AB'
     },
     text: {
         color: '#fff',
-        fontSize: 24,
+        fontSize: 30,
         textAlign: 'center',
+        fontWeight: 'bold',
+
     },
 });
 
