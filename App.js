@@ -19,6 +19,12 @@ const App = () => {
     });
   }
 
+  const deleteItem2 = (id) => {
+    setCarts(prevItems => {
+      return prevItems.filter(item => item.id != id);
+    });
+  }
+
   const addItem = (text) => {
     setItems(prevItems => {
       return [{id: Math.random(), text}, ...prevItems];
@@ -32,7 +38,8 @@ const App = () => {
   }
 
   return (
-    <ScrollView style={styles.container}>
+    <View style={styles.container}>
+      <ScrollView>
       <Header />
       <AddItem addItem={addItem}/>
       <View>
@@ -49,11 +56,12 @@ const App = () => {
       <FlatList
         data={carts}
         renderItem={({item}) => (
-          <CartList item={item} deleteItem={deleteItem}/>
+          <CartList item={item} deleteItem2={deleteItem2}/>
         )}
       />
       </View>
     </ScrollView>
+    </View>
   );
 }
 

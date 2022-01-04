@@ -10,9 +10,6 @@ const List = ({item, text, addToCart, deleteItem}) => {
         <Pressable style={styles.listViewButtonAdd}>
             <Text style={styles.listViewButtonAddText} onPress={() => {addToCart(item.text); deleteItem(item.id)}}>Item Found</Text>
         </Pressable>
-        {/* <Pressable style={styles.listViewButtonAdd2} onPress={() => deleteItem(item.id)}>
-            <Text style={styles.listViewButtonAddText2}>Remove</Text>
-        </Pressable> */}
     </View>
     </TouchableOpacity>
   );
