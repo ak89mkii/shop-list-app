@@ -20,18 +20,18 @@ AddItemHeader.defaultProps = {
 
 const styles = StyleSheet.create({
     header: {
-        height: 70,
-        padding: 15,
-        flexDirection: 'row',
-        justifyContent: 'center',
-        alignItems: 'center',
-        backgroundColor: '#0047AB'
+      height: 70,
+      padding: 15,
+      flexDirection: 'row',
+      justifyContent: 'center',
+      alignItems: 'center',
+      backgroundColor: '#0047AB',
     },
     text: {
-        color: '#fff',
-        fontSize: 30,
-        textAlign: 'center',
-        fontWeight: 'bold',
+      color: '#fff',
+      fontSize: 30,
+      textAlign: 'center',
+      fontWeight: 'bold',
 
     },
     tinyLogo: {

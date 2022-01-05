@@ -20,18 +20,18 @@ CartItemHeader.defaultProps = {
 
 const styles = StyleSheet.create({
     header: {
-        height: 70,
-        padding: 15,
-        backgroundColor: '#EACE09',
-        flexDirection: 'row',
-        justifyContent: 'center',
-        alignItems: 'center',
+      height: 70,
+      padding: 15,
+      backgroundColor: '#EACE09',
+      flexDirection: 'row',
+      justifyContent: 'center',
+      alignItems: 'center',
     },
     text: {
       color: 'white',
-        fontSize: 30,
-        textAlign: 'center',
-        fontWeight: 'bold',
+      fontSize: 30,
+      textAlign: 'center',
+      fontWeight: 'bold',
     },
     tinyLogo: {
       width: 35,
