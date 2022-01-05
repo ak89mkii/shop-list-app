@@ -8,7 +8,6 @@ const Header = ({title}) => {
         style={styles.tinyLogo}
         source={require('//Users/spock-117/code/projects/react_native/ShopListApp/Images/find.png')}
       />
-      <Text style={styles.text}>  </Text>
       <Text style={styles.text}>{title}</Text>
       <StatusBar style="auto" />
     </View>
@@ -36,7 +35,7 @@ const styles = StyleSheet.create({
     },
     tinyLogo: {
       width: 50,
-      height: 50,
+      height: 50,margin: 15,
     },
 });
 

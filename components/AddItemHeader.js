@@ -1,9 +1,13 @@
 import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+import { StyleSheet, Text, View, Image } from 'react-native';
 
 const AddItemHeader = ({title}) => {
   return (
     <View style={styles.header}>
+      <Image
+        style={styles.tinyLogo}
+        source={require('/Users/spock-117/code/projects/react_native/ShopListApp/Images/find.png')}
+      />
       <Text style={styles.text}>{title}</Text>
       <StatusBar style="auto" />
     </View>
@@ -18,6 +22,9 @@ const styles = StyleSheet.create({
     header: {
         height: 70,
         padding: 15,
+        flexDirection: 'row',
+        justifyContent: 'center',
+        alignItems: 'center',
         backgroundColor: '#0047AB'
     },
     text: {
@@ -26,6 +33,11 @@ const styles = StyleSheet.create({
         textAlign: 'center',
         fontWeight: 'bold',
 
+    },
+    tinyLogo: {
+      width: 50,
+      height: 50,
+      margin: 15,
     },
 });
 
