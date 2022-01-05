@@ -15,7 +15,7 @@ const Header = ({title}) => {
 };
 
 Header.defaultProps = {
-    title: 'SIMPLE-LIST APP'
+    title: 'SIMPLE-LIST'
 }
 
 const styles = StyleSheet.create({
@@ -35,7 +35,8 @@ const styles = StyleSheet.create({
     },
     tinyLogo: {
       width: 50,
-      height: 50,margin: 15,
+      height: 50,
+      margin: 15,
     },
 });
 
