@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { FlatList, StyleSheet, ScrollView, View } from 'react-native';
+import { FlatList, StyleSheet, ScrollView, View, Alert } from 'react-native';
 import Header from './components/Header';
 import AddItemHeader from './components/AddItemHeader';
 import CartItemHeader from './components/CartItemHeader';
@@ -25,10 +25,22 @@ const App = () => {
     });
   }
 
-  const addItem = (text) => {
-    setItems(prevItems => {
-      return [{id: Math.random(), text}, ...prevItems];
-    });
+  const addItem = text => {
+    if(!text) {
+      Alert.alert(
+        "Error!",
+        "Please enter an item in the field to add.",
+        [
+          {
+            text: "Ok",
+          },
+        ],
+      );   
+    } else {
+      setItems(prevItems => {
+        return [{id: Math.random(), text}, ...prevItems];
+      });
+    } 
   }
 
   const addToCart = (text) => {
