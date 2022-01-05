@@ -27,6 +27,7 @@
 // https://stackoverflow.com/questions/52250061/react-native-how-to-call-multiple-functions-when-onpress-is-clicked/52250225
 // https://reactjs.org/docs/hooks-state.html
 // https://stackoverflow.com/questions/45685176/center-image-react-native-loading-screen
+// https://reactnative.dev/docs/alert
 #### Images References / Credits:
 #### Sounds References / Credits:
 #### Fonts / Credits:
