@@ -52,27 +52,27 @@ const App = () => {
   return (
     <View style={styles.container}>
       <ScrollView>
-      <Header />
-      <AddItem addItem={addItem}/>
-      <View>
-      <AddItemHeader />
-      <FlatList
-        data={items}
-        renderItem={({item}) => (
-          <List item={item} addToCart={addToCart} deleteItem={deleteItem}/>
-        )}
-      />
-      </View>
-      <View>
-      <CartItemHeader />
-      <FlatList
-        data={carts}
-        renderItem={({item}) => (
-          <CartList item={item} deleteItem2={deleteItem2}/>
-        )}
-      />
-      </View>
-    </ScrollView>
+        <Header />
+        <AddItem addItem={addItem}/>
+        <View>
+          <AddItemHeader />
+          <FlatList
+            data={items}
+            renderItem={({item}) => (
+              <List item={item} addToCart={addToCart} deleteItem={deleteItem}/>
+            )}
+          />
+        </View>
+        <View>
+          <CartItemHeader />
+          <FlatList
+            data={carts}
+            renderItem={({item}) => (
+              <CartList item={item} deleteItem2={deleteItem2}/>
+            )}
+          />
+        </View>
+      </ScrollView>
     </View>
   );
 }
