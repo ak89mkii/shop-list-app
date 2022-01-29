@@ -4,7 +4,8 @@
 (React Native (.expo)) | Simple shopping list tracking app. Features include adding new items to "to get" list, remove, and "in cart" list.
 
 ## Screenshots:
-
+![alt text](Images/02.png)
+![alt text](Images/01.png)
 ## Technologies Used:
 #### Main:
 - React Native
