@@ -1,24 +1,15 @@
 import { React, useState } from 'react';
 import { StyleSheet, Text, View, TextInput, TouchableOpacity, Image } from 'react-native';
 
-const Credits = ({title, addItem}) => {
+const Credits = ({title, devCredits}) => {
     const [text, setText] = useState('');
 
     const onChange = textValue => setText(textValue);
 
     return (
         <View style={styles.header}>
-            <TextInput 
-                placeholder='Add to List...' 
-                style={styles.input}
-                onChangeText={onChange}
-            />
-            <TouchableOpacity style={styles.btn} onPress={() => addItem(text)}>
-                <Image
-                style={styles.tinyLogo}
-                source={require('/Users/spock-117/code/projects/react_native/ShopListApp/Images/add.png')}
-                />
-                <Text style={styles.btnText}>Add Item</Text>
+            <TouchableOpacity style={styles.btn} onPress={() => devCredits(text)}>
+                <Text style={styles.btnText}>Development Credits</Text>
             </TouchableOpacity>
         </View>
     );
@@ -32,7 +23,7 @@ const styles = StyleSheet.create({
         flexDirection: 'row',
     },
     btn: {
-        backgroundColor: 'cornflowerblue',
+        backgroundColor: 'orange',
         color: 'white',
         fontSize: 24,
         textAlign: 'center',

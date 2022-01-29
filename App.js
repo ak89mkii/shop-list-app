@@ -6,7 +6,7 @@ import CartItemHeader from './components/CartItemHeader';
 import List from './components/List';
 import CartList from './components/CartList';
 import AddItem from './components/AddItem';
-// import AddToCart from './components/AddToCart';
+import Credits from './components/Credits';
 
 const App = () => {
   const [items, setItems] = useState([]);
@@ -49,6 +49,18 @@ const App = () => {
     });
   }
 
+  const devCredits = text => {
+    Alert.alert(
+      "Develpment Credits:",
+      "Developed by Ponder Code & Icons by HideMaru, Gregor Cresnar, iconixar, Maxicons",
+      [
+        {
+          text: "Ok",
+        },
+      ],
+    );   
+  }
+
   return (
     <View style={styles.container}>
       <ScrollView>
@@ -71,6 +83,9 @@ const App = () => {
               <CartList item={item} deleteItem2={deleteItem2}/>
             )}
           />
+        </View>
+        <View>
+          <Credits devCredits={devCredits}/>
         </View>
       </ScrollView>
     </View>
