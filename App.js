@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { FlatList, StyleSheet, ScrollView, View, Alert } from 'react-native';
+import { FlatList, StyleSheet, ScrollView, View, Alert, Image } from 'react-native';
 import Header from './components/Header';
 import AddItemHeader from './components/AddItemHeader';
 import CartItemHeader from './components/CartItemHeader';
@@ -52,7 +52,7 @@ const App = () => {
   const devCredits = text => {
     Alert.alert(
       "Develpment Credits:",
-      "Developed by Ponder Code & Icons by HideMaru, Gregor Cresnar, iconixar, Maxicons",
+      "Developed by Ponder Code & Icons by HideMaru, Gregor Cresnar, iconixar, Maxicons. Links in GitHub README.md | https://github.com/ak89mkii/shop-list-app.",
       [
         {
           text: "Ok",
@@ -84,6 +84,12 @@ const App = () => {
             )}
           />
         </View>
+        <View style={styles.imageContainer}>
+          <Image 
+            style={styles.tinyLogo}
+            source={require('/Users/spock-117/code/projects/react_native/ShopListApp/Images/goku.png')}
+                />
+        </View>
         <View>
           <Credits devCredits={devCredits}/>
         </View>
@@ -96,6 +102,18 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     paddingTop: 60,
+  },
+  imageContainer: {
+    justifyContent: 'center',
+    alignItems: 'center',
+  },
+  tinyLogo: {
+    width: 100,
+    height: 100,
+    padding: 5,
+    margin: 5,
+    justifyContent: 'center',
+    alignItems: 'center',
   },
 });
 
