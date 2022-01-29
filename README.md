@@ -1,7 +1,7 @@
 # Shop List Tracker App
 
 ## Description:
-(React Native (.expo)) | Simple shopping list tracking app. Features include adding new items to "to get" list, remove, and "in cart" list.
+(React Native (.expo)) | Simple shopping list tracking app. Features include adding new items to the "To Find" list and found items to the "Cart" list.
 
 ## Screenshots:
 ![alt text](Images/02.png)
