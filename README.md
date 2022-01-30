@@ -21,6 +21,7 @@
 #### Development Environment:
 // https://www.youtube.com/watch?v=tbLAHKhjjI4
 // https://reactnative.dev/docs/environment-setup
+// https://docs.expo.dev/workflow/expo-cli/
 #### Information References:
 // https://www.youtube.com/watch?v=Hf4MJH0jDb4
 // https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/random
@@ -29,6 +30,7 @@
 // https://reactjs.org/docs/hooks-state.html
 // https://stackoverflow.com/questions/45685176/center-image-react-native-loading-screen
 // https://reactnative.dev/docs/alert
+// https://www.youtube.com/watch?v=ByqYR1IwYKY
 #### Images References / Credits:
 // HideMaru: https://thenounproject.com/icon/add-3367120/
 // Gregor Cresnar: https://thenounproject.com/icon/cart-1015699/
