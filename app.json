@@ -2,7 +2,7 @@
   "expo": {
     "name": "Simple-List App",
     "slug": "simple-list-app",
-    "desription":"(React Native (.expo)) | Simple shopping list tracking app. Features include adding new items to the To Find list and found items to the Cart list.",
+    "description":"(React Native (.expo)) | Simple shopping list tracking app. Features include adding new items to the To Find list and found items to the Cart list.",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "/Users/spock-117/code/projects/react_native/ShopListApp/assets/goku.png",

@@ -22,6 +22,9 @@
 // https://www.youtube.com/watch?v=tbLAHKhjjI4
 // https://reactnative.dev/docs/environment-setup
 // https://docs.expo.dev/workflow/expo-cli/
+#### Deployment References:
+// https://docs.expo.dev/distribution/uploading-apps/
+//  https://developer.apple.com/testflight/
 #### Information References:
 // https://www.youtube.com/watch?v=Hf4MJH0jDb4
 // https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/random
