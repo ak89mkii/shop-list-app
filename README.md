@@ -34,6 +34,8 @@
 // https://stackoverflow.com/questions/45685176/center-image-react-native-loading-screen
 // https://reactnative.dev/docs/alert
 // https://www.youtube.com/watch?v=ByqYR1IwYKY
+// https://reactjs.org/docs/hooks-state.html
+// https://stackoverflow.com/questions/51375991/clear-textinput-onpress
 #### Images References / Credits:
 // HideMaru: https://thenounproject.com/icon/add-3367120/
 // Gregor Cresnar: https://thenounproject.com/icon/cart-1015699/

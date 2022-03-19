@@ -2,8 +2,10 @@ import { React, useState } from 'react';
 import { StyleSheet, Text, View, TextInput, TouchableOpacity, Image } from 'react-native';
 
 const AddItem = ({title, addItem}) => {
+    // Sets initial state variable "text" as empty string and updating variable with "setText".
     const [text, setText] = useState('');
 
+    // Updating function. Sets "setText" to characters in field.
     const onChange = textValue => setText(textValue);
 
     return (
@@ -12,8 +14,10 @@ const AddItem = ({title, addItem}) => {
                 placeholder='Add to List...' 
                 style={styles.input}
                 onChangeText={onChange}
+                value = {text}
             />
-            <TouchableOpacity style={styles.btn} onPress={() => addItem(text)}>
+            {/* Adds item in input field to "To Find" list and resets state of input to empty string. */}
+            <TouchableOpacity style={styles.btn} onPress={() => {addItem(text), setText('')}}>
                 <Image
                 style={styles.tinyLogo}
                 source={require('/Users/spock-117/code/projects/react_native/ShopListApp/Images/add.png')}
