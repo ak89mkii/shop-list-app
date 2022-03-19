@@ -36,6 +36,8 @@
 // https://www.youtube.com/watch?v=ByqYR1IwYKY
 // https://reactjs.org/docs/hooks-state.html
 // https://stackoverflow.com/questions/51375991/clear-textinput-onpress
+// https://react-native-async-storage.github.io/async-storage/docs/usage
+// https://stackoverflow.com/questions/44376002/what-are-my-options-for-storing-data-when-using-react-native-ios-and-android
 #### Images References / Credits:
 // HideMaru: https://thenounproject.com/icon/add-3367120/
 // Gregor Cresnar: https://thenounproject.com/icon/cart-1015699/
