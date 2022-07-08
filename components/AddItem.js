@@ -10,20 +10,24 @@ const AddItem = ({title, addItem}) => {
 
     return (
         <View style={styles.header}>
+            <View>
             <TextInput 
                 placeholder='Add to List...' 
                 style={styles.input}
                 onChangeText={onChange}
                 value = {text}
             />
+            </View>
+            <View style={styles.btn}>
             {/* Adds item in input field to "To Find" list and resets state of input to empty string. */}
-            <TouchableOpacity style={styles.btn} onPress={() => {addItem(text), setText('')}}>
+            <TouchableOpacity style={styles.btnText} onPress={() => {addItem(text), setText('')}}>
                 <Image
                 style={styles.tinyLogo}
                 source={require('/Users/spock-117/code/projects/react_native/ShopListApp/Images/add.png')}
                 />
                 <Text style={styles.btnText}>Add Item</Text>
             </TouchableOpacity>
+            </View>
         </View>
     );
 };
@@ -36,7 +40,7 @@ const styles = StyleSheet.create({
         flexDirection: 'row',
     },
     btn: {
-        backgroundColor: 'cornflowerblue',
+        backgroundColor: '#84926A',
         color: 'white',
         fontSize: 24,
         textAlign: 'center',
@@ -44,12 +48,19 @@ const styles = StyleSheet.create({
         margin: 5,
         flexDirection: 'row',
         justifyContent: 'center',
-        alignItems: 'center',
+        alignSelf: 'center',
+        width: '80%',
+        // borderStyle: 'solid',
+        borderRadius: 15,
+        // borderWidth: 10,
     },
     btnText: {
         color: '#fff',
         fontSize: 24,
         textAlign: 'center',
+        flexDirection: 'row',
+        padding: 5,
+        margin: 5,
     },
     tinyLogo: {
         width: 50,

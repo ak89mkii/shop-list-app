@@ -6,16 +6,20 @@ const Header = ({title}) => {
     <View style={styles.header}>
       <Image
         style={styles.tinyLogo}
-        source={require('/Users/spock-117/code/projects/react_native/ShopListApp/Images/logo.png')}
+        source={require('/Users/spock-117/code/projects/react_native/ShopListApp/Images/main.png')}
       />
-      <Text style={styles.text}>{title}</Text>
+      <Image
+        style={styles.text}
+        source={require('/Users/spock-117/code/projects/react_native/ShopListApp/Images/title.png')}
+      />
+      {/* <Text style={styles.text}>{title}</Text> */}
       <StatusBar style="auto" />
     </View>
   );
 };
 
 Header.defaultProps = {
-    title: 'SIMPLE-LIST'
+    title: 'DUAL-LISTS'
 }
 
 const styles = StyleSheet.create({
@@ -28,15 +32,25 @@ const styles = StyleSheet.create({
         alignItems: 'center',
     },
     text: {
-        color: 'white',
-        fontSize: 30,
-        textAlign: 'center',
-        fontWeight: 'bold',
+        // color: 'white',
+        // fontSize: 30,
+        // textAlign: 'center',
+        fontWeight: 'bold',      
+        width: 300,
+        height: 60,
+        margin: 15,
+        borderStyle: 'solid',
+        borderRadius: 10,
+        // borderWidth: 5,
+
     },
     tinyLogo: {
-      width: 50,
-      height: 50,
+      width: 60,
+      height: 60,
       margin: 15,
+      borderStyle: 'solid',
+      borderRadius: 10,
+      borderWidth: 5,
     },
 });
 
