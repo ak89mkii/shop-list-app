@@ -10,7 +10,7 @@ const Header = ({title}) => {
       />
       <Image
         style={styles.text}
-        source={require('/Users/spock-117/code/projects/react_native/ShopListApp/Images/title.png')}
+        source={require('/Users/spock-117/code/projects/react_native/ShopListApp/Images/title2.png')}
       />
       {/* <Text style={styles.text}>{title}</Text> */}
       <StatusBar style="auto" />
@@ -26,7 +26,7 @@ const styles = StyleSheet.create({
     header: {
         height: 70,
         padding: 15,
-        backgroundColor: 'grey',
+        backgroundColor: '#1f2124',
         flexDirection: 'row',
         justifyContent: 'center',
         alignItems: 'center',
@@ -47,10 +47,10 @@ const styles = StyleSheet.create({
     tinyLogo: {
       width: 60,
       height: 60,
-      margin: 15,
-      borderStyle: 'solid',
-      borderRadius: 10,
-      borderWidth: 5,
+      // margin: 15,
+      // borderStyle: 'solid',
+      // borderRadius: 10,
+      // borderWidth: 5,
     },
 });
 
