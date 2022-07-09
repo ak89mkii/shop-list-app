@@ -23,7 +23,7 @@ const AddItem = ({title, addItem}) => {
             <TouchableOpacity style={styles.btnText} onPress={() => {addItem(text), setText('')}}>
                 <Image
                 style={styles.tinyLogo}
-                source={require('/Images/add.png')}
+                source={require('./assets/add.png')}
                 />
                 <Text style={styles.btnText}>Add Item</Text>
             </TouchableOpacity>

@@ -87,7 +87,7 @@ const App = () => {
         <View style={styles.imageContainer}>
           <Image 
             style={styles.tinyLogo}
-            source={require('Images/goku.png')}
+            source={require('./assets/goku.png')}
           ></Image>
         </View>
         <View>
