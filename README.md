@@ -4,8 +4,8 @@
 (React Native (.expo)) | Simple shopping list tracking app. Features include adding new items to the "To Find" list and found items to the "Cart" list.
 
 ## Screenshots:
-![alt text](Images/02.png)
-![alt text](Images/01.png)
+![alt text](assets/02.png)
+![alt text](assets/01.png)
 ## Technologies Used:
 #### Main:
 - React Native
@@ -24,7 +24,10 @@
 // https://docs.expo.dev/workflow/expo-cli/
 #### Deployment References:
 // https://docs.expo.dev/distribution/uploading-apps/
-//  https://developer.apple.com/testflight/
+// https://developer.apple.com/testflight/
+// https://pagepro.co/blog/publishing-expo-react-native-app-to-ios-and-android/
+// https://www.youtube.com/watch?v=oBWBDaqNuws
+// https://stackoverflow.com/questions/64541850/expo-delete-permission-location
 #### Information References:
 // https://www.youtube.com/watch?v=Hf4MJH0jDb4
 // https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/random
@@ -38,6 +41,8 @@
 // https://stackoverflow.com/questions/51375991/clear-textinput-onpress
 // https://react-native-async-storage.github.io/async-storage/docs/usage
 // https://stackoverflow.com/questions/44376002/what-are-my-options-for-storing-data-when-using-react-native-ios-and-android
+// https://stackoverflow.com/questions/44335385/button-refuses-to-centre-horizontally-in-container
+// https://app.termly.io/dashboard/website/5fe0f1a2-cce4-42ac-9c42-e67f26c1bb4e/privacy-policy
 #### Images References / Credits:
 // HideMaru: https://thenounproject.com/icon/add-3367120/
 // Gregor Cresnar: https://thenounproject.com/icon/cart-1015699/
@@ -46,3 +51,4 @@
 #### Sounds References / Credits:
 #### Fonts / Credits:
 // https://fonts.google.com/specimen/Roboto
+// https://fonts.google.com/specimen/Righteous?preview.text=DUAL-LISTS&preview.text_type=custom#standard-styles
