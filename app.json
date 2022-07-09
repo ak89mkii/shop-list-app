@@ -5,11 +5,11 @@
     "description": "(React Native (.expo)) | Simple shopping list tracking app. Features include adding new items to the To Find list and found items to the Cart list.",
     "version": "1.1.0",
     "orientation": "portrait",
-    "icon": "/Users/spock-117/code/projects/react_native/ShopListApp/assets/goku.png",
+    "icon": "./assets/goku.png",
     "splash": {
-      "image": "/Users/spock-117/code/projects/react_native/ShopListApp/assets/goku.png",
-      "resizeMode": "center",
-      "backgroundColor": "cornflowerblue"
+      "image": "/assets/goku.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#FFFFFF"
     },
     "updates": {
       "fallbackToCacheTimeout": 0
@@ -22,6 +22,7 @@
       "bundleIdentifier": "com.ak89mkii.simplelistapp"
     },
     "android": {
+      "versionCode": 1,
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#FFFFFF"
