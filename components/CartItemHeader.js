@@ -6,7 +6,7 @@ const CartItemHeader = ({title}) => {
     <View style={styles.header}>
       <Image
       style={styles.tinyLogo}
-      source={require(' ./components/Images/cart.png')}
+      source={require('./Images/cart.png')}
       />
       <Text style={styles.text}>{title}</Text>
       <StatusBar style="auto" />
