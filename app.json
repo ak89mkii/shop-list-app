@@ -7,7 +7,7 @@
     "orientation": "portrait",
     "icon": "./assets/goku.png",
     "splash": {
-      "image": "/assets/goku.png",
+      "image": "./assets/goku.png",
       "resizeMode": "contain",
       "backgroundColor": "#FFFFFF"
     },

@@ -6,7 +6,7 @@ const AddItemHeader = ({title}) => {
     <View style={styles.header}>
       <Image
         style={styles.tinyLogo}
-        source={require('/Users/spock-117/code/projects/react_native/ShopListApp/Images/find.png')}
+        source={require('./Images/find.png')}
       />
       <Text style={styles.text}>{title}</Text>
       <StatusBar style="auto" />
