@@ -6,11 +6,11 @@ const Header = ({title}) => {
     <View style={styles.header}>
       <Image
         style={styles.tinyLogo}
-        source={require('./Images/main.png')}
+        source={require('./components/Images/main.png')}
       />
       <Image
         style={styles.text}
-        source={require('./Images/title2.png')}
+        source={require('./components/Images/title2.png')}
       />
       {/* <Text style={styles.text}>{title}</Text> */}
       <StatusBar style="auto" />
