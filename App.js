@@ -87,7 +87,7 @@ const App = () => {
         <View style={styles.imageContainer}>
           <Image 
             style={styles.tinyLogo}
-            source={require('./assets/goku.png')}
+            source={require('/Users/spock-117/code/projects/react_native/ShopListApp/assets/goku.png')}
           ></Image>
         </View>
         <View>

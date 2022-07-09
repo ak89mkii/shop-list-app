@@ -6,11 +6,11 @@ const Header = ({title}) => {
     <View style={styles.header}>
       <Image
         style={styles.tinyLogo}
-        source={require('./assets/main.png')}
+        source={require('/Users/spock-117/code/projects/react_native/ShopListApp/assets/main.png')}
       />
       <Image
         style={styles.text}
-        source={require('./assets/title2.png')}
+        source={require('/Users/spock-117/code/projects/react_native/ShopListApp/assets/title2.png')}
       />
       {/* <Text style={styles.text}>{title}</Text> */}
       <StatusBar style="auto" />
