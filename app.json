@@ -8,8 +8,8 @@
     "icon": "/Users/spock-117/code/projects/react_native/ShopListApp/assets/goku.png",
     "splash": {
       "image": "/Users/spock-117/code/projects/react_native/ShopListApp/assets/goku.png",
-      "resizeMode": "contain",
-      "backgroundColor": "#ffffff"
+      "resizeMode": "center",
+      "backgroundColor": "cornflowerblue"
     },
     "updates": {
       "fallbackToCacheTimeout": 0
