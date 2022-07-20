@@ -8,9 +8,10 @@ const Credits = ({title, devCredits}) => {
 
     return (
         <View style={styles.header}>
-            <TouchableOpacity style={styles.btn} onPress={() => devCredits(text)}>
+            {/* <TouchableOpacity style={styles.btn} onPress={() => devCredits(text)}>
                 <Text style={styles.btnText}>Development Credits</Text>
-            </TouchableOpacity>
+            </TouchableOpacity> */}
+            <Text style={styles.Text}>&copy; Dual-Lists | Ponder Code | Ponder Enterprises LLC</Text>
         </View>
     );
 };
@@ -36,6 +37,11 @@ const styles = StyleSheet.create({
     btnText: {
         color: '#fff',
         fontSize: 24,
+        textAlign: 'center',
+    },
+    Text: {
+        color: 'black',
+        fontSize: 10,
         textAlign: 'center',
     },
     tinyLogo: {
