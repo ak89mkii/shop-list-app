@@ -10,7 +10,7 @@ const Header = ({title}) => {
       />
       <Image
         style={styles.text}
-        source={require('/Users/spock-117/code/projects/react_native/ShopListApp/assets/title2.png')}
+        source={require('/Users/spock-117/code/projects/react_native/ShopListApp/assets/title.png')}
       />
       {/* <Text style={styles.text}>{title}</Text> */}
       <StatusBar style="auto" />

@@ -1,15 +1,15 @@
 {
   "expo": {
-    "name": "Simple-List App",
-    "slug": "simple-list-app",
+    "name": "Dual-Lists App",
+    "slug": "dual-lists-app",
     "description": "(React Native (.expo)) | Simple shopping list tracking app. Features include adding new items to the To Find list and found items to the Cart list.",
     "version": "1.1.0",
     "orientation": "portrait",
     "icon": "./assets/goku.png",
     "splash": {
-      "image": "./assets/goku.png",
+      "image": "./assets/main.png",
       "resizeMode": "contain",
-      "backgroundColor": "#FFFFFF"
+      "backgroundColor": "#121212"
     },
     "updates": {
       "fallbackToCacheTimeout": 0
@@ -22,9 +22,9 @@
       "bundleIdentifier": "com.ak89mkii.simplelistapp"
     },
     "android": {
-      "versionCode": 2,
+      "versionCode": 3,
       "adaptiveIcon": {
-        "foregroundImage": "./assets/adaptive-icon.png",
+        "foregroundImage": "./assets/main.png",
         "backgroundColor": "#FFFFFF"
       },
       "permissions": [],
