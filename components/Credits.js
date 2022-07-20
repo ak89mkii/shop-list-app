@@ -11,7 +11,7 @@ const Credits = ({title, devCredits}) => {
             {/* <TouchableOpacity style={styles.btn} onPress={() => devCredits(text)}>
                 <Text style={styles.btnText}>Development Credits</Text>
             </TouchableOpacity> */}
-            <Text style={styles.Text}>&copy; Dual-Lists | Ponder Code | Ponder Enterprises LLC</Text>
+            <Text style={styles.Text}>&copy; 2022 Dual-Lists | Ponder Code | Ponder Enterprises LLC</Text>
         </View>
     );
 };
