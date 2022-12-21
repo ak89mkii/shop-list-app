@@ -1,7 +1,7 @@
 import { React, useState } from 'react';
 import { StyleSheet, Text, View, TextInput, TouchableOpacity, Image } from 'react-native';
 
-const AddItem = ({title, addItem}) => {
+const AddItem = ({addItem, storeData}) => {
     // Sets initial state variable "text" as empty string and updating variable with "setText".
     const [text, setText] = useState('');
 
