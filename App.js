@@ -160,7 +160,7 @@ const styles = StyleSheet.create({
     alignItems: 'center',
   },
   saveButton: {
-    backgroundColor: 'cornflowerblue',
+    backgroundColor: '#84926A',
     color: 'white',
     fontSize: 20,
     textAlign: 'center',

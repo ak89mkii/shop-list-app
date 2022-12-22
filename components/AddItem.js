@@ -40,7 +40,7 @@ const styles = StyleSheet.create({
         flexDirection: 'row',
     },
     btn: {
-        backgroundColor: '#84926A',
+        backgroundColor: 'cornflowerblue',
         color: 'white',
         fontSize: 24,
         textAlign: 'center',
