@@ -44,6 +44,8 @@
 // https://stackoverflow.com/questions/44335385/button-refuses-to-centre-horizontally-in-container
 // https://app.termly.io/dashboard/website/5fe0f1a2-cce4-42ac-9c42-e67f26c1bb4e/privacy-policy
 // https://www.youtube.com/watch?v=PRGHWgTydyQ
+// https://reactnative.dev/docs/asyncstorage
+// https://react-native-async-storage.github.io/async-storage/docs/install
 #### Images References / Credits:
 // HideMaru: https://thenounproject.com/icon/add-3367120/
 // Gregor Cresnar: https://thenounproject.com/icon/cart-1015699/
