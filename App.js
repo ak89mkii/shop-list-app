@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import AsyncStorage from '@react-native-async-storage/async-storage';
-import { FlatList, StyleSheet, ScrollView, View, Alert, Image, Button } from 'react-native';
+import { FlatList, StyleSheet, Text, ScrollView, View, Alert, Image, TouchableOpacity } from 'react-native';
 import Header from './components/Header';
 import AddItemHeader from './components/AddItemHeader';
 import CartItemHeader from './components/CartItemHeader';
@@ -99,13 +99,16 @@ const App = () => {
     <View style={styles.container}>
       <ScrollView>
         <Header />
-        <AddItem addItem={addItem} storeData={storeData} items={items}/>
+        <AddItem addItem={addItem} items={items}/>
         <View style={styles.saveButton}>
-        <Button 
-          title="Save List"
-          onPress={storeData}
-          color= "blue"
-        />
+            {/* Adds item in input field to "To Find" list and resets state of input to empty string. */}
+          <TouchableOpacity style={styles.saveButton} onPress={storeData}>
+            <Image
+              style={styles.tinyLogo2}
+              source={require('/Users/spock-117/code/projects/react_native/ShopListApp/assets/logo.png')}
+            />
+            <Text style={styles.saveButtonText}>Save List</Text>
+          </TouchableOpacity>
         </View>
         <View>
           <AddItemHeader />
@@ -157,11 +160,32 @@ const styles = StyleSheet.create({
     alignItems: 'center',
   },
   saveButton: {
+    backgroundColor: 'cornflowerblue',
+    color: 'white',
+    fontSize: 20,
+    textAlign: 'center',
     padding: 5,
     margin: 5,
+    flexDirection: 'row',
     justifyContent: 'center',
-    alignItems: 'center',
-  },
+    alignSelf: 'center',
+    width: '60%',
+    // borderStyle: 'solid',
+    borderRadius: 15,
+    // borderWidth: 10,
+},
+saveButtonText: {
+    color: '#fff',
+    fontSize: 18,
+    textAlign: 'center',
+    flexDirection: 'row',
+    padding: 3,
+    margin: 5,
+},
+tinyLogo2: {
+  width: 30,
+  height: 30,
+},
 });
 
 export default App;
