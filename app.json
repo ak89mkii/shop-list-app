@@ -12,7 +12,8 @@
       "backgroundColor": "#121212"
     },
     "updates": {
-      "fallbackToCacheTimeout": 0
+      "fallbackToCacheTimeout": 0,
+      "url": "https://u.expo.dev/2fa294da-9ef2-4a17-9c73-ceb41467ebff"
     },
     "assetBundlePatterns": [
       "**/*"
@@ -22,7 +23,7 @@
       "bundleIdentifier": "com.ak89mkii.simplelistapp"
     },
     "android": {
-      "versionCode": 4,
+      "versionCode": 5,
       "adaptiveIcon": {
         "foregroundImage": "./assets/main.png",
         "backgroundColor": "#FFFFFF"
@@ -32,6 +33,12 @@
     },
     "web": {
       "favicon": "./assets/favicon.png"
-    }
+    },
+    "extra": {
+      "eas": {
+        "projectId": "2fa294da-9ef2-4a17-9c73-ceb41467ebff"
+      }
+    },
+    "runtimeVersion": "1.0.0"
   }
 }

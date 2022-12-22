@@ -43,6 +43,7 @@
 // https://stackoverflow.com/questions/44376002/what-are-my-options-for-storing-data-when-using-react-native-ios-and-android
 // https://stackoverflow.com/questions/44335385/button-refuses-to-centre-horizontally-in-container
 // https://app.termly.io/dashboard/website/5fe0f1a2-cce4-42ac-9c42-e67f26c1bb4e/privacy-policy
+// https://www.youtube.com/watch?v=PRGHWgTydyQ
 #### Images References / Credits:
 // HideMaru: https://thenounproject.com/icon/add-3367120/
 // Gregor Cresnar: https://thenounproject.com/icon/cart-1015699/
