@@ -55,8 +55,8 @@ const App = () => {
   const storeData = async () => {
     try {
       console.log(items)
-      await AsyncStorage.setItem('test', JSON.stringify(items));
-      // await AsyncStorage.setItem('test', (items));
+      await AsyncStorage.setItem('list', JSON.stringify(items));
+      await AsyncStorage.setItem('cart', JSON.stringify(carts));
     } catch (e) {
       // saving error
     }
@@ -64,11 +64,14 @@ const App = () => {
 
   const getData = async () => {
     try {
-      const value = await AsyncStorage.getItem('test');
+      const value = await AsyncStorage.getItem('list');
+      const value2 = await AsyncStorage.getItem('cart');
       if(value !== null) {
         // Need to parse before setting state.
-        let nu = (JSON.parse(value))
-        setItems(nu);
+        let finalList = (JSON.parse(value))
+        setItems(finalList);
+        let finalCart = (JSON.parse(value2))
+        setCarts(finalCart);
         // setItems([0]);
         console.log(JSON.parse(value))
         console.log(nu)
